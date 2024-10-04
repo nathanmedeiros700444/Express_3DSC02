@@ -8,14 +8,14 @@ app.get("/", function (req, res) {
   //console.log(__dirname + "/src/views/index.html");
 });
 
-app.get("/about", function (req, res) {
+app.get("/sobre", function (req, res) {
   res.sendFile(__dirname + "/src/views/about.html");
   //console.log(__dirname + "/src/views/about.html");
 });
 
-app.get("/404", function (req, res) {
-  res.sendFile(__dirname + "/src/views/404.html");
-  //console.log(__dirname + "/src/views/404.html");
+//ROTA UTILIZANDO MIDDLEWARE(404)
+app.use(function (req, res) {
+  res.status(404).sendFile(__dirname + "/src/views/404.html");
 });
 
 app.listen(PORT, () => {

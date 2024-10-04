@@ -3,17 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pagina Inicial</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #ccc;
+      }
+      .menu {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
-    <main>
-      <h3>Pagina Inicial</h3>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt,
-        aperiam voluptatibus nesciunt fugit, ipsam illo adipisci in nam et
-        consequatur nobis reprehenderit repudiandae nisi numquam beatae
-        accusamus mollitia amet dolore.
-      </p>
-    </main>
+    <nav class="menu">
+      <img
+        width="300"
+        src="https://coleai.com.br/wp-content/uploads/2024/01/brasao-da-familia-Silva.jpg"
+        alt="Logo Site"
+      />
+      <ul>
+        <a href="/">HOME</a>
+        <a href="/sobre">SOBRE NÓS</a>
+      </ul>
+    </nav>
   </body>
 </html>
